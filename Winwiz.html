@@ -15,70 +15,95 @@
     <link rel="stylesheet" href="Winwiz.css" />
   </head>
   <body>
-    <header>
+    <header class="section">
       <div class="subCover"></div>
-      <ul class="top-menu">
-        <h1>
-          <div class="logo"><a href="#">윈위즈</a></div>
-        </h1>
-        <li>
-          <a href="#"><span>기업정보</span></a>
-          <ul class="sub-menu com_info">
-            <li><a href="#">회사개요</a></li>
-            <li><a href="#">회사연혁</a></li>
-            <li><a href="#">회사조직도</a></li>
-            <li><a href="#">CEO인사말</a></li>
-            <li><a href="#">오시는길</a></li>
-            <li><a href="#">홍보센터</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><span>사업분야</span></a>
-          <ul class="sub-menu bs_area">
-            <li><a href="#">사업영역</a></li>
-            <li><a href="#">서비스영역</a></li>
-            <li><a href="#">구축사례</a></li>
-            <li><a href="#">파트너사</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><span>솔루션</span></a>
-          <ul class="sub-menu solution">
-            <li><a href="#">RMS</a></li>
-            <li><a href="#">POS</a></li>
-            <li><a href="#">WIZMALL</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><span>인재채용</span></a>
-          <ul class="sub-menu recruit">
-            <li><a href="#">채용안내</a></li>
-            <li><a href="#">인사시스템</a></li>
-            <li><a href="#">복리후생</a></li>
-            <li><a href="#">입사지원</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><span>고객지원</span></a>
-          <ul class="sub-menu client">
-            <li><a href="#">상담문의</a></li>
-            <li><a href="#">업체유지보수</a></li>
-            <li><a href="#">인트라넷</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="inner">
+        <ul class="menu">
+          <h1>
+            <div class="logo"><a href="#">윈위즈</a></div>
+          </h1>
+          <li>
+            <a href="#"><span>기업정보</span></a>
+            <ul class="sub-menu com_info">
+              <li><a href="#">회사개요</a></li>
+              <li><a href="#">회사연혁</a></li>
+              <li><a href="#">회사조직도</a></li>
+              <li><a href="#">CEO인사말</a></li>
+              <li><a href="#">오시는길</a></li>
+              <li><a href="#">홍보센터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span>사업분야</span></a>
+            <ul class="sub-menu bs_area">
+              <li><a href="#">사업영역</a></li>
+              <li><a href="#">서비스영역</a></li>
+              <li><a href="#">구축사례</a></li>
+              <li><a href="#">파트너사</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span>솔루션</span></a>
+            <ul class="sub-menu solution">
+              <li><a href="#">RMS</a></li>
+              <li><a href="#">POS</a></li>
+              <li><a href="#">WIZMALL</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span>인재채용</span></a>
+            <ul class="sub-menu recruit">
+              <li><a href="#">채용안내</a></li>
+              <li><a href="#">인사시스템</a></li>
+              <li><a href="#">복리후생</a></li>
+              <li><a href="#">입사지원</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span>고객지원</span></a>
+            <ul class="sub-menu client">
+              <li><a href="#">상담문의</a></li>
+              <li><a href="#">업체유지보수</a></li>
+              <li><a href="#">인트라넷</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <div class="main"></div>
+    <section class="section main mainFirst">
+      <div class="mainFirst_intro">
+        <p class="titleFirst">윈위즈 솔루션/RMS/POS/WIZMALL</p>
+        <p class="titleSecond">포스 베이커리 솔루션</p>
+        <p class="titleThird">Digital Innovation Partner</p>
+        <p class="des">
+          윈위즈는 IT 서비스 전문기업으로서<br />
+          파트너의 혁신을 돕고 있습니다.
+        </p>
+        <div class="detail"><a href="#">자세히보기</a></div>
+      </div>
 
+      <figure>
+        <div class="leftImg"></div>
+        <div class="centerImg"></div>
+        <div class="rightImg"></div>
+      </figure>
+    </section>
+
+    <section class="section mainSecond">
+
+
+    </section>
+
+<!-- 
     <script>
-      const topMenuLists = document.querySelectorAll("header .top-menu>li>a");
+      const topMenuLists = document.querySelectorAll("header .menu>li>a");
       const subCover = document.querySelector("header .subCover");
       const subMenuLists = document.querySelectorAll("header .sub-menu>li");
 
       topMenuLists.forEach(function (topMenuList) {
         topMenuList.addEventListener("mouseover", on);
-        // topMenuList.addEventListener("mouseout", out);
+        topMenuList.addEventListener("mouseout", out);
       });
 
       function on() {
@@ -93,6 +118,6 @@
           subMenuList.style.display = "none";
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>
