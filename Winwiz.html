@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>윈위즈</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -13,18 +13,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="Winwiz.css" />
+    <link rel="icon" href="Img/favicon.png" />
+    <link rel="apple-touch-icon" href="Img/favicon.png" />
   </head>
   <body>
     <header class="section">
+   
       <div class="subCover"></div>
       <div class="inner">
-        <ul class="menu">
+        
+        <ul class="gnb">
           <h1>
             <div class="logo"><a href="#">윈위즈</a></div>
           </h1>
           <li>
             <a href="#"><span>기업정보</span></a>
-            <ul class="sub-menu com_info">
+            <ul class="sub-gnb com_info">
               <li><a href="#">회사개요</a></li>
               <li><a href="#">회사연혁</a></li>
               <li><a href="#">회사조직도</a></li>
@@ -35,7 +39,7 @@
           </li>
           <li>
             <a href="#"><span>사업분야</span></a>
-            <ul class="sub-menu bs_area">
+            <ul class="sub-gnb bs_area">
               <li><a href="#">사업영역</a></li>
               <li><a href="#">서비스영역</a></li>
               <li><a href="#">구축사례</a></li>
@@ -44,7 +48,7 @@
           </li>
           <li>
             <a href="#"><span>솔루션</span></a>
-            <ul class="sub-menu solution">
+            <ul class="sub-gnb solution">
               <li><a href="#">RMS</a></li>
               <li><a href="#">POS</a></li>
               <li><a href="#">WIZMALL</a></li>
@@ -52,7 +56,7 @@
           </li>
           <li>
             <a href="#"><span>인재채용</span></a>
-            <ul class="sub-menu recruit">
+            <ul class="sub-gnb recruit">
               <li><a href="#">채용안내</a></li>
               <li><a href="#">인사시스템</a></li>
               <li><a href="#">복리후생</a></li>
@@ -61,7 +65,7 @@
           </li>
           <li>
             <a href="#"><span>고객지원</span></a>
-            <ul class="sub-menu client">
+            <ul class="sub-gnb client">
               <li><a href="#">상담문의</a></li>
               <li><a href="#">업체유지보수</a></li>
               <li><a href="#">인트라넷</a></li>
@@ -90,32 +94,101 @@
       </figure>
     </section>
 
-    <section class="section mainSecond">
+    <section class="section mainSecond"></section>
 
+    <footer class="section">
 
-    </section>
+        <div class="footer-top">
+          <div class="inner">
+          <ul>
+            <li>
+              <a href="#">기업정보</a>
+              <ul>
+                <li><a href="#">회사개요</a></li>
+                <li><a href="#">회사연혁</a></li>
+                <li><a href="#">회사조직도</a></li>
+                <li><a href="#">CEO인사말</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">홍보센터</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">사업분야</a>
+              <ul>
+                <li><a href="#">사업영역</a></li>
+                <li><a href="#">서비스영역</a></li>
+                <li><a href="#">구축사례</a></li>
+                <li><a href="#">파트너사</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">솔루션</a>
+              <ul>
+                <li><a href="#">RMS</a></li>
+                <li><a href="#">POS</a></li>
+                <li><a href="#">WIZMALL</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">인사시스템</a></li>
+                <li><a href="#">복리후생</a></li>
+                <li><a href="#">입사지원</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객지원</a>
+              <ul>
+                <li><a href="#">상담문의</a></li>
+                <li><a href="#">업체유지보수</a></li>
+                <li><a href="#">인트라넷</a></li>
+              </ul>
+            </li>
+            </ul>
+          </div>
+            </div><!--footer-top-->
+          <div class="footer-bottom">
+            <div class="inner">
+              <div class="leftImg"></div>
+              <span>
+                <p>서울시 성동구 아차산로 126(성수동2가 더리브 세종타워), 1210호</p>
+                <p>상담문의: TEL:719-2104/FAX:719-2106</p>
+                <p>COPYRIGHT&copy; 2020 WINWIZ Co.Ltd. ALL RIGHTS RESERVED.</p>
+              </span>
+              <div class="rightImg"></div>
+            </div>
+          </div>
+       
+    </div>
+    </footer>
 
-<!-- 
-    <script>
-      const topMenuLists = document.querySelectorAll("header .menu>li>a");
+    <!-- <script>
+      const topgnbLists = document.querySelectorAll("header .gnb>li>a");
+      const gnbLists = document.querySelectorAll('header .gnb>li')
       const subCover = document.querySelector("header .subCover");
-      const subMenuLists = document.querySelectorAll("header .sub-menu>li");
+      const subgnbLists = document.querySelectorAll("header .sub-gnb>li");
 
-      topMenuLists.forEach(function (topMenuList) {
-        topMenuList.addEventListener("mouseover", on);
-        topMenuList.addEventListener("mouseout", out);
+      topgnbLists.forEach(function (topgnbList) {
+        topgnbList.addEventListener("mouseover", on);
       });
+      
+      gnbLists.forEach(function (gnbList) {
+        gnbList.addEventListener("mouseout", out);
+      });
+      
 
       function on() {
         subCover.style.display = "block";
-        subMenuLists.forEach(function (subMenuList) {
-          subMenuList.style.display = "block";
+        subgnbLists.forEach(function (subgnbList) {
+          subgnbList.style.display = "block";
         });
       }
       function out() {
         subCover.style.display = "none";
-        subMenuLists.forEach(function (subMenuList) {
-          subMenuList.style.display = "none";
+        subgnbLists.forEach(function (subgnbList) {
+          subgnbList.style.display = "none";
         });
       }
     </script> -->
